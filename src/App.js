@@ -1,10 +1,8 @@
-
+import { Home } from './pages'
 
 function App() {
   return (
-    <div className="App">
-      <p>member test</p>
-    </div>
+    <Home />
   );
 }
 

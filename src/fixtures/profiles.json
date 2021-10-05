@@ -1,0 +1,34 @@
+[
+    {
+        "name": "Amit Jain",
+        "title": "Co-Founder",
+        "company": "Interface Sense Consulting LLP",
+        "image": "/images/amit.png"
+    },
+
+    {
+        "name": "Bimal Mohan",
+        "title": "Co-Founder",
+        "company": "Interface Sense Consulting LLP"
+    },
+
+    {
+        "name": "Carl Rohan",
+        "title": "Chief Technology Officer",
+        "company": "Interface Sense Consulting LLP",
+        "image": "/images/carl.jpg"
+    },
+
+    {
+        "name": "Darpa Shem",
+        "title": "Senior Developer",
+        "company": "Interface Sense Consulting LLP"
+    },
+
+    {
+        "name": "Ehia Rahul",
+        "title": "Co-Founder",
+        "company": "Interface Sense Consulting LLP",
+        "image": "/images/rahul.jpg"
+    }
+]
