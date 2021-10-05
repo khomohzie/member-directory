@@ -9,7 +9,7 @@ export default function ProfileContainer() {
                 <Profile key={i} letter={item.name.charAt(0)}>
 
                     <Profile.Pane>
-                        <p>{item.image}</p>
+                        <Profile.Image image={item.image} />
                     </Profile.Pane>
 
                     <Profile.Pane>
@@ -19,7 +19,7 @@ export default function ProfileContainer() {
                     </Profile.Pane>
 
                     <Profile.Pane>
-                        ♠
+                        <Profile.Open />
                     </Profile.Pane>
 
                 </Profile>

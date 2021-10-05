@@ -1,10 +1,23 @@
 import React from 'react'
-import { Inner, Item, Container, Pane, Order, Name, Title, Company } from './styles/profile'
+import { makeStyles } from '@material-ui/core/styles'
+import {
+    Inner,
+    Item,
+    Container,
+    Pane,
+    Order,
+    OrderDiv,
+    Name,
+    Title,
+    Company,
+    Image,
+    Open
+} from './styles/profile'
 
-export default function Profile({ children, letter, ...restProps }) {
+export default function Profile({ children, letter, image, ...restProps }) {
     return (
         <Inner>
-            <Order>{letter}</Order>
+            <OrderDiv><Order>{letter}</Order></OrderDiv>
             <Item {...restProps}>
                 {children}
             </Item>
@@ -34,4 +47,20 @@ Profile.Title = function ProfileTitle({ children, ...restProps }) {
 
 Profile.Company = function ProfileCompany({ children, ...restProps }) {
     return <Company {...restProps}>{children}</Company>
+}
+
+Profile.Image = function ProfileImage({ image, ...restProps }) {
+
+    const AvatarStyle = makeStyles((theme) => ({
+        large: {
+            width: theme.spacing(7),
+            height: theme.spacing(7)
+        }
+    }));
+
+    return <Image src={image} {...restProps} className={AvatarStyle().large} />
+}
+
+Profile.Open = function ProfileOpen({ children, ...restProps }) {
+    return <Open {...restProps}>{children}</Open>
 }

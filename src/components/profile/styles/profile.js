@@ -1,4 +1,6 @@
 import styled from 'styled-components/macro';
+import { Avatar } from '@material-ui/core'
+import { RiArrowRightCircleLine } from 'react-icons/ri'
 
 export const Container = styled.div`
 
@@ -27,6 +29,13 @@ export const Pane = styled.div`
 export const Order = styled.div`
     background: #EEEEF0;
     border-color: #DDDDDD;
+    width: 80%;
+    margin: auto;
+`;
+
+export const OrderDiv = styled.div`
+    background: #EEEEF0;
+    border-color: #DDDDDD;
 `;
 
 export const Name = styled.p`
@@ -44,7 +53,15 @@ export const Company = styled.p`
     color: #999999;
 `;
 
-export const Image = styled.img`
-    max-width: 100%;
-    height: auto;
+export const Image = styled(Avatar)`
+    cursor: pointer;
+    :hover {
+        opacity: 0.8;
+    }
+`;
+
+export const Open = styled(RiArrowRightCircleLine)`
+    color: #BBBBBB;
+    cursor: pointer;
+    font-size: 1.5rem;
 `;
