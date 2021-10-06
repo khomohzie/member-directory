@@ -49,7 +49,7 @@ Profile.Company = function ProfileCompany({ children, ...restProps }) {
     return <Company {...restProps}>{children}</Company>
 }
 
-Profile.Image = function ProfileImage({ image, ...restProps }) {
+Profile.Image = function ProfileImage({ children, image, ...restProps }) {
 
     const AvatarStyle = makeStyles((theme) => ({
         large: {
@@ -58,7 +58,7 @@ Profile.Image = function ProfileImage({ image, ...restProps }) {
         }
     }));
 
-    return <Image src={image} {...restProps} className={AvatarStyle().large} />
+    return <Image src={image} {...restProps} className={AvatarStyle().large}>{children}</Image>
 }
 
 Profile.Open = function ProfileOpen({ children, ...restProps }) {
