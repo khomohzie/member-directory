@@ -27,15 +27,18 @@ export const Name = styled.div`
 export const MenuNav = styled(CgMenuRound)`
     color: #444444;
     font-size: 25px;
+    cursor: pointer;
 `;
 
 export const Filter = styled(IoFilterCircleOutline)`
     color: #444444;
     font-size: 25px;
     margin: 0 20px;
+    cursor: pointer;
 `;
 
 export const Search = styled(IoSearchCircleOutline)`
     color: #444444;
     font-size: 25px;
+    cursor: pointer;
 `;
